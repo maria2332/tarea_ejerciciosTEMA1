@@ -10,6 +10,19 @@ Para voltear una cadena rápidamente utilizando slicing podemos utilizar un terc
 cadena = "zeréP nauJ,01"
 """
 
+#CORRECDICION CADENA DE TEXTO CORRUPTO
+cadena = "zeréP nauJ,01"
+def cambio(cadena):
+    cadena=(cadena[::-1])
+    nota = cadena.split(",")
+    nombre = nota[1].split(" ")
+    print(nombre[0], nombre[1], "ha sacado un", nota[0])
+
+cambio(cadena)
+
+
+
+
 class alumno:
     def __init__(self, nombre, nota):
         self.nombre = nombre
