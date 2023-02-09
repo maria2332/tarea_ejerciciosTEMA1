@@ -2,7 +2,7 @@ import os
 
 def iniciar():
     while True:
-        os.system('clear')
+        os.system('cls')
 
         print("========================")
         print("  BIENVENIDO AL SISTEMA ")
@@ -16,7 +16,7 @@ def iniciar():
         print("========================")
 
         opcion = input("Seleccione una opción: ")
-        os.system('clear')
+        os.system('cls')
 
         if opcion == "1":
             print("Listando los alumnos...\n")
