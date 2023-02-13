@@ -1,4 +1,5 @@
 import os 
+import database as db
 
 def iniciar():
     while True:
