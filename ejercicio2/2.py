@@ -8,3 +8,22 @@ Multiplica el numero_magico por el numero_usuario en sí mismo
 Finalmente muestra el valor final del numero_magico por pantalla
 """
 
+cadena = "zeréP nauJ,01"
+def cambio(cadena):
+    cadena=(cadena[::-1])
+    nota = cadena.split(",")
+    nombre = nota[1].split(" ")
+    return alumno(nombre[0], nombre[1], nota[0])
+
+
+
+class alumno:
+    def __init__(self, nombre, apellido, nota):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.nota = nota
+
+    def __str__(self):
+        return f"{self.nombre} {self.apellido} ha sacado un {self.nota}"
+print(cambio(cadena).nota)
+
