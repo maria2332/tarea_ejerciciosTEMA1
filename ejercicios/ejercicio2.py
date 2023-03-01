@@ -7,3 +7,4 @@ Multiplica el numero_usuario por 9 en sí mismo
 Multiplica el numero_magico por el numero_usuario en sí mismo
 Finalmente muestra el valor final del numero_magico por pantalla
 """
+
