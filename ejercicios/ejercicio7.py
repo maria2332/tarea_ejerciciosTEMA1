@@ -8,3 +8,23 @@ elementos = [1, 5, -2]
  
 # Completa el ejercicio aquí
 """
+
+def agregar_una_vez(lista, el):
+    if el in lista:
+        raise ValueError(f"Error: Imposible añadir elementos duplicados => {el}.")
+    else:
+        lista.append(el)
+    return lista
+
+if __name__ == "__main__":
+
+    try:
+        lista = [1, 5, -2]
+        agregar_una_vez(lista, 10)
+        agregar_una_vez(lista, -2)
+        agregar_una_vez(lista, "Hola")
+        print(lista)
+    except ValueError as e:
+        print(e)
+
+        
