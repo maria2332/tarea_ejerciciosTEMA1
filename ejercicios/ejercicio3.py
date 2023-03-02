@@ -5,6 +5,7 @@ lista_1 = ["h",'o','l','a',' ', 'm','u','n','d','o']
 lista_2 = ["h",'o','l','a',' ', 'l','u','n','a']
 """
 
+
 def listas(lista_1, lista_2):
     lista_3 = []
     for i in lista_1:
