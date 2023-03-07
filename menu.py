@@ -69,12 +69,12 @@ def iniciar():
         
         elif opcion == "5":
             print("Ejercicio 5: Descomposicion")
-            n=input(("Ingresa un número: ", "blue"))
+            n=input(("Ingresa un número: "))
             descomponer(n)
 
         elif opcion == "6":
             print("Ejercicio 6: Pares e impares")
-            n=int(input(("Longitud de la lista: ", "blue")))
+            n=int(input(("Longitud de la lista: ")))
             lista6=[]
             for i in range(n):
                 lista6.append(int(input(("Ingresa el número: "))))
