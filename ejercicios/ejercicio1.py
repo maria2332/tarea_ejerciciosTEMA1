@@ -16,14 +16,13 @@ class Alumno:
     @staticmethod
     def formatear_cadena(cadena):
         cadena_correcta = cadena[::-1]
-        nota, nombre = cadena_correcta.split(",")
+        frase = cadena_correcta.split(",")
+        nota = frase[0]
+        nombre = frase[1]
         return f"{nombre} ha sacado un {nota}"
     
 # cadena = "zeréP nauJ,01"
-# alumno = Alumno(cadena)
-# print(alumno.formatear_cadena(cadena))
+nombre1=Alumno("zeréP nauJ,01")
 
 if __name__ == "__main__":
-    cadena = input("Introduce una cadena: ")
-    alumno = Alumno(cadena)
-    print(alumno.formatear_cadena(cadena))
+    print(Alumno.formatear_cadena(nombre1.cadena))

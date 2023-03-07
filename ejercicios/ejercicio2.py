@@ -9,18 +9,23 @@ Finalmente muestra el valor final del numero_magico por pantalla
 """
 
 from ast import main
-
-def ejercicio2():
-    numero_magico = 12345679
-    numero_usuario = int(input("Introduce un número entre 1 y 9: "))
-    if numero_usuario < 1 or numero_usuario > 9:
-        print("El número debe estar entre 1 y 9")
-        return
-    numero_usuario *= 9
-    numero_magico *= numero_usuario
-    print(numero_magico)
+import sys
 
 
-if __name__ == "__main__":
-    main()
+numero_magico = 12345679
+
+def excepcion(numero):  
+    try:
+        numero=int(numero) 
+        if 1<=int(numero)<=9:
+            return int(numero)
+        else:
+            raise ValueError("El número no está entre 1 y 9")
+    except:
+        raise ValueError("El caracter no aceptado")
+    
+def num(numero):
+    numero=excepcion(numero)
+    return f'Resultado: {numero*9*numero_magico}'
+
 
