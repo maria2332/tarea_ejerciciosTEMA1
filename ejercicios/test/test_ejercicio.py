@@ -27,7 +27,7 @@ class TestEjercicio(unittest.TestCase):
         {'tarea 1': 'levantarme', 'prioridad':'1'},
         {'tarea 2': 'comer', 'prioridad':'2'}
         ]
-        self.assertEqual(ejercicio4.ordenar(cola), [{'tarea 1': 'levantarme', 'prioridad': '1'},
+        self.assertEqual(ejercicio4.estructura_cola(cola), [{'tarea 1': 'levantarme', 'prioridad': '1'},
                                                         {'tarea 2': 'comer', 'prioridad': '2'},
                                                         {'tarea 3': 'ir a clase', 'prioridad': '3'}])
     def test_ejercicio5(self):
