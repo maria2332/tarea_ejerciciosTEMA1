@@ -8,9 +8,9 @@ import ejercicio6
 import ejercicio7
 from unittest.mock import patch
 
-class TestEjercicios(unittest.TestCase):
-    def test_ejercicio1(self):
-        self.assertEqual(ejercicio1.Alumno.formatear_cadena("zeréP nauJ,01"), "Juan Pérez ha sacado un 01")
+class TestEjercicio(unittest.TestCase):
+    def test_formatear_cadena(self):
+        self.assertEqual(ejercicio1.Alumno.formatear_cadena("zeréP nauJ,01"), "Juan Pérez ha sacado un 10")
 
     def test_ejercicio2(self):
         self.assertRaises(ValueError, ejercicio2.excepcion, "hola")
