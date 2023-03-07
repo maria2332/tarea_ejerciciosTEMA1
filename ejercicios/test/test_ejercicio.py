@@ -31,8 +31,8 @@ class TestEjercicio(unittest.TestCase):
                                                         {'tarea 2': 'comer', 'prioridad': '2'},
                                                         {'tarea 3': 'ir a clase', 'prioridad': '3'}])
     def test_ejercicio5(self):
-        self.assertEqual(ejercicio5.descomposicion("1234"), ["0004", "0030", "0200", "1000"])
-
+        self.assertEqual(ejercicio5.descomponer("1234"), ["0004", "0030", "0200", "1000"])
+    
     def test_ejercicio6(self):
         self.assertEqual(ejercicio6.separar([1,2,3,4,5,6,7,8,9,10]), ([2, 4, 6, 8, 10], [1, 3, 5, 7, 9]))
 

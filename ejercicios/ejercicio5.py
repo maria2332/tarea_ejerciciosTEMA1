@@ -14,45 +14,29 @@ Pista
 Que el valor sea un número no significa necesariamente que deba serlo para formatearlo. Necesitarás jugar muy bien con los índices y realizar muchas conversiones entre tipos cadenas, números y viceversa
 """
 
-from ast import main 
+from ast import main
+import sys
 
-def num():
+
+def num(numeros):
+    try:
+        numeros=int(numeros)
+        return str(numeros)
+        sys.exit()
+    except:
+        raise ValueError("El caracter no aceptado")
+
+def descomponer(numeros):
+    numeros=num(numeros)
+    numero=numeros[::-1]
+    lista=[]
+    ceros_izquierda=0
     while True:
-        try:
-            num = int(input("Introduce un número entero positivo: "))
-            if num < 0:
-                print("El número debe ser positivo")
-                continue
+        for i in str(numero):
+            ceros_izquierda+=1
+            k=((i.ljust(int(ceros_izquierda),'0')).zfill(len(numero)))
+            print(k)
+            lista.append(k)
+        if ceros_izquierda >= len(numero):
             break
-        except ValueError:
-            print("El valor introducido no es un número entero")
-            continue
-    return num
-
-def descomposicion(num):
-    num = str(num)
-    num = num[::-1]
-    ceros_izquierda = 0
-    while True:
-        for i in str(num):
-            ceros_izquierda += 1
-            print((i.ljust(int(ceros_izquierda), "0")).zfill(len(num)))
-        if ceros_izquierda >= len(num):
-            break
-
-# descomposicion(3647) 
-
-if __name__ == "__main__":
-    main()
-
-   
-
-
-    
-
-
-
-
-
-
-
+    return lista
