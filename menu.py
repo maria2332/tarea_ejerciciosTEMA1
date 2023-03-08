@@ -56,13 +56,13 @@ def iniciar():
         elif opcion == "4":
             print("Ejercicio 4: Tareas")
             list_cola=[]
-            NumeroTareas = int(input((F"Ingresa el número de tareas: ")))
+            NumeroTareas = int(input(("Ingresa el número de tareas: ")))
             for i in range(NumeroTareas):
                 # Crear un diccionario
                 cola = {}
                 # Agregar elementos al diccionario
-                cola[f'tarea {i+1}'] = input((f'Ingresa la tarea {i+1}: '))
-                cola[f'prioridad'] = input((f'Ingresa la prioridad de la tarea {i+1}: '))
+                cola['tarea '] = input(('Ingresa la tarea: '))
+                cola['prioridad'] = input(('Ingresa la prioridad de la tarea: '))
                 list_cola.append(cola)
             estructura_cola(list_cola)
             
